@@ -1,0 +1,1560 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap);
+
+body{
+  font-family: Manrope;
+  color: #333;
+}
+.wrapper{
+min-height: 100%;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+main{
+  flex: 1 1 auto;
+}
+[class*="__container"]{
+  max-width:1170px;
+  margin: 0 auto;
+
+}
+@media(max-width:1198.99px){
+  [class*="__container"]{
+    max-width: 970px;
+
+  }
+}
+@media(max-width:990.98px){
+  [class*="__container"]{
+    max-width: 750px;
+
+  }
+}
+@media(max-width:767.98px){
+  [class*="__container"]{
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 103px;
+  align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
+  gap: 10px;
+}
+@media(max-width:767.98px){
+   .header__container{
+    min-height: 0;
+    flex-direction: column;
+  }
+  .menu__list{
+    justify-content: center;
+  }
+  .menu__link{
+    font-size: 16px;
+  }
+ 
+}
+.header__logo {
+  font-weight: 700;
+  font-size: 23px;
+  color: inherit;
+}
+.header__menu {
+
+}
+.menu {
+
+}
+.menu__list {
+  display: flex;
+   flex-wrap: wrap;
+   column-gap: 46px;
+   row-gap: 5px;
+}
+.menu__links {
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 46px;
+  transition: 0.8s ease 0s;
+ 
+}
+
+.menu__link:hover{
+  text-decoration: underline;
+  color: grey;
+}
+
+
+
+
+.main-block {
+  padding-bottom: 110px;
+}
+.main-block__container {
+  padding-top: 183px;
+  position: relative;
+}
+.main-block__container::after{
+  background-color: #BDCCFF;
+  content: "";
+  position: absolute;
+ width: 100vw;
+height: 100%;
+  top: 0;
+  left: 68%;
+}
+.main-block__body {
+  display: flex;
+ flex-wrap: nowrap;
+ align-items: flex-start;
+}
+.main-block__content {
+  padding-right: 20px;
+  flex: 0 1 50%;
+}
+.content-main-block {
+  padding-top: 40px;
+  padding-right: 20px;
+  flex: 0 1 50%;
+  position: relative;
+  z-index: 2;
+}
+.content-main-block-subtitle{
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #FF9900;
+  margin-bottom: 20px;
+}
+.content-main-block__title {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 73px;
+  
+}
+.content-main-block__text {
+  font-size: 17px;
+  color: #31353B;
+  letter-spacing: 0.17px;
+  line-height: 23px;
+  font-weight: 400;
+  margin-bottom: 90px;
+}
+.content-main-block__body{
+  padding-right: 45px;
+}
+.content-main-block__form {
+}
+.form-main-block {
+  display: flex;
+ 
+
+  background-color: #fff;
+ background:#fff url(../img/icons/home.svg)33px 32px no-repeat;
+  box-shadow: 0px 100px 80px rgba(0,0,0,0.03),0px 64.8148px 46.8519px rgba(0,0,0,0.0227778),0px 1.85185px 3.14815px rgba(0,0,0,0.00722222);
+  margin-right: -170px;
+  position: relative;
+  z-index: 2;
+}
+.form-main-block__input {
+  height: 86px;
+  border: 1px solid #dadada;
+  width: 100%;
+  flex: 1 1 auto;
+  padding-left: 74px;
+  background: transparent
+}
+.form-main-block__input::placeholder{
+  height: 86px;
+  line-height: 135%; /* 27/20 */
+  font-weight: 400;
+  color: #31353B;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+.form-main-block__button {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+    width: 188px;
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: #F85A47;
+
+
+}
+
+
+.body-main-block__slider {
+  flex: 0 1 50%;
+  min-width: 0;
+
+
+}
+
+.slider-main-block__slide {
+  position: relative;
+  padding-bottom: 95%;
+}
+.slider-main-block__slide img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partners-main-block {
+max-width: 65%;
+}
+.partners-main-block__label {
+font-size: 17px;
+margin-bottom: 25px;
+ 
+}
+.partners-main-block__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5px;
+
+}
+
+.partners-main-block__item img{
+  max-width: 100%;
+}
+.body-main-block{
+  margin-bottom: 14px;
+}
+
+.main-block-arrows {
+padding-bottom: 90px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.swiper-button-prev{
+ 
+transform: rotate(-180deg);
+}
+
+
+
+.body-main-block__arrow {
+  background: url(../img/icons/arrow.svg)0 0/100% no-repeat;
+}
+.body-main-block__arrow:after{
+  display: none;
+}
+.body-main-block__arrow .swiper-button-prev,
+.body-main-block___arrow .swiper-button-next{
+  position: static;
+  height: 20px;
+  width: 11px;
+  background: url(../img/icons/arrow.svg) 0 0 no-repeat;
+}
+@media(max-width:998.98px){
+  .main-block__container{
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+.body-main-block{
+display: block;
+}
+.form-main-block{
+  margin-right: 0;
+}
+.content-main-block-_body{
+padding-right: 0;
+}
+.main-block__content{
+  margin-bottom: 20px;
+}
+.partners-main-block{
+  max-width: none;
+  position: relative;
+  z-index: 2;
+}
+}
+@media(max-width:767.98px){
+.partners-main-block__items{
+  justify-content: center;
+}
+.content-main-block__title{
+  font-size: 30px;
+}
+.form-main-block{
+  display: flex;
+  flex-direction: column;
+ background: #fff;
+}
+.form-main-block__input{
+
+  padding: 0px 15px;
+}
+.form-main-block__input::placeholder{
+  text-align: center;
+}
+.form-main-block__button{
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 87px;
+padding: 20px;
+width:50%;
+}
+}
+/* ======================================================================== */
+.page__how {
+
+}
+.how {
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+}
+.how__container {
+}
+.how__title {
+  margin-bottom: 70px;
+}
+.how__text{
+
+}
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 137.5%; /* 55/40 */
+}
+.title_center{
+ text-align: center;
+ font-weight: 600;
+ font-size: 40px;
+ line-height: 137.5%; /* 55/40 */
+}
+.how__items {
+  
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 30px;
+
+  
+  justify-content: space-between;
+}
+@media(min-width:991px){
+  .how__items {
+    padding: 0px 35px;
+  }
+}
+.how__item {
+  max-width: 260px;
+}
+.item-how {
+  text-align: center;
+  align-items: center;
+  display: grid;
+  justify-items: center;
+  position: relative;
+}
+.item-how:first-child::after{
+  background-color: #9672FF;
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50px;
+  right: 0;
+  top: 18%;
+  max-width: 260px;
+}
+.item-how:nth-child(2)::before{
+  background-color: #4DDFFD;
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50px;
+  left: 0;
+  top: 18%;
+  max-width: 260px;
+}
+.item-how:nth-child(2)::after{
+  background-color: #4DDFFD;
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50px;
+  right: 0;
+  top: 18%;
+  max-width: 260px;
+}
+.item-how:last-child::before{
+  background-color: #F2B8EC;
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  border-radius: 50px;
+  left: 0;
+  top: 18%;
+  max-width: 260px;
+  
+}
+.item-how__icons {
+  margin-bottom: 50px;
+  border-radius: 20%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.how__sub-title {
+ margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+.how__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+}
+.item-how__icons__1 {
+ 
+  background-color: #9672FF;
+ padding: 33px;
+ 
+
+}
+.item-how__icons__1 img{
+ 
+}
+.item-how__icons__2 {
+  background-color: #4DDFFD;
+  padding: 33px;
+}
+.item-how__icons__3 {
+  background-color: #F2B8EC;
+}
+@media(max-width:949.98px){
+  .item-how:first-child::after{
+   right: 5%;
+  }
+  .item-how:nth-child(2)::before{
+  
+    left: 5%;
+   
+  }
+  .item-how:nth-child(2)::after{
+
+    right: 5%;
+   
+  }
+  .item-how:last-child::before{
+ left: 5%;
+    
+  }
+}
+@media (max-width: 767.98px) {
+  .how__items{
+    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  }
+  .item-how:first-child::after{
+display: none;
+  }
+  .item-how:nth-child(2)::before{
+   display: none;
+   
+  }
+  .item-how:nth-child(2)::after{
+display: none;
+   
+  }
+  .item-how:last-child::before{
+display: none;
+  }
+  .how__text{
+    font-size: 25px;
+  }
+  .how__sub-title{
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .item-how__icons{
+    margin-bottom: 25px;
+  }
+
+
+}
+/* =========================================================== */
+.deals{
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+}
+
+@media (max-width: 991.98px) {
+.deals {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+}
+@media (max-width: 767.98px) {
+.deals {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+}
+.deals__container {}
+.deals__header {
+margin-bottom: 50px;
+}
+.deals__tabs {}
+
+.header-deals {
+display: flex;
+gap:20px;
+flex-wrap: wrap;
+align-items: center;
+}
+.header-deals__content {
+flex: 1 1 auto;
+}
+.header-deals__title {}
+.header-deals__title:not(:last-child){
+margin-bottom: 15px;
+}
+.header-deals__text {
+max-width: 470px;
+line-height: 24px;
+}
+.header-deals__link {
+background-color: #F85A47;
+display: inline-block;
+transition: all 0.3s ease 0s;
+font-weight: 500;
+font-size: 17px;
+text-align: center;
+color: #fff;
+line-height: 23px;
+padding: 22px 33px;
+box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+border-radius: 5px;
+}
+@media (max-width: 767.98px){
+.header-deals__link {
+  width: 100%;
+}
+}
+.header-deals__link:hover{
+background-color: #b9473a;
+}
+.tabs-deals {}
+.tabs-deals__nav {
+display: flex;
+column-gap: 50px;
+row-gap: 10px;
+flex-wrap: wrap;
+margin-bottom: 35px;
+}
+.tabs-deals__button {
+font-size: 19px;
+line-height: 26px;
+cursor: pointer;
+position: relative;
+transition: color 0.3s ease 0s;
+background-color: transparent;
+}
+.tabs-deals__button::after{
+content: "";
+position: absolute;
+bottom: 0px;
+left: 0;
+width: 0;
+height: 1px;
+transition: width 0.3s ease 0s;
+background-color: #F85A47;
+}
+.tabs-deals__button:hover{
+color: #F85A47;
+}
+.tabs-deals__button:hover::after {
+width: 100%;
+}
+.tabs-deals__button.active{
+color: #F85A47;
+}
+.tabs-deals__button.active::after {
+width: 100%;
+}
+
+.tabs-deals__body {}
+.tabs-deals__item {
+display: none;
+}
+.tabs-deals__item.active{
+display: block;
+}
+
+.item-tabs {}
+.item-tabs__items {
+display: grid;
+gap: 30px;
+grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+}
+.item-tabs__item {
+position: relative;
+}
+.item-tabs__options {
+position: absolute;
+left: 14px;
+z-index: 2;
+top: 14px;
+display: flex;
+flex-wrap: wrap;
+gap: 6px;
+}
+.item-tabs__option {
+font-size: 12px;
+background-color: rgba(0, 0, 0, 0.4);
+border: 1px solid #FFFFFF;
+border-radius: 5px;
+color: #fff;
+padding: 6px 12px;
+transition: background-color 0.3s ease 0s;
+}
+.item-tabs__option:hover{
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.item-tabs__image {
+position: relative;
+display: block;
+padding-bottom: 81%;
+border-radius: 5px;
+overflow: hidden;
+}
+.item-tabs__image:hover img{
+transform: scale(1.1);
+}
+.item-tabs__image img{
+transition: transform 0.3s ease 0s;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+object-fit: cover;
+}
+/* ==================================== */
+.featured {
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+@media (max-width: 991.98px) {
+	.featured {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.featured {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+.featured__container {}
+.featured__title {
+	margin-bottom: 95px;
+}
+
+.featured__body {
+	background: #F1FFFF;
+	padding: 40px 40px 80px 40px;
+	display: grid;
+	column-gap: 77px;
+	row-gap: 40px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width:991.98px){
+	.featured__body {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.featured__title {
+		margin-bottom: 50px;
+	}
+	  
+}
+@media (max-width:767.98px) {
+	.featured__body {
+		margin: 0px -15px;
+		padding: 20px 15px 20px 15px;
+	}
+	.featured__title {
+			margin-bottom: 30px;
+		}
+}
+
+.featured__images {}
+.featured__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.images-featured {
+	display: grid;
+	justify-items: center;
+}
+.images-featured__item {}
+.images-featured__item img{
+	max-width: 100%;
+}
+.images-featured__item_mini{
+	margin-left: 20px;
+	margin-right: 20px;
+	filter: drop-shadow(0px 163px 80px rgba(0, 0, 0, 0.04)) drop-shadow(0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704)) drop-shadow(0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963)) drop-shadow(0px 32.6px 13px rgba(0, 0, 0, 0.02)) drop-shadow(0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037)) drop-shadow(0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963)) drop-shadow(48px 58px 44px rgba(0, 0, 0, 0.09));
+	margin-top: -114px;
+}
+
+.content-featured {}
+.content-featured__body {
+}
+
+
+.content-featured__title {
+	font-weight: 600;
+	font-size: 31px;
+	line-height: 1.35;
+	margin-bottom: 25px;
+}
+@media (max-width:767.98px) {
+	.content-featured__title {
+		font-size: 24px;
+	}
+}
+
+.content-featured__text {
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+.content-featured__options {
+	display: grid;
+	gap: 35px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 55px;
+}
+
+.options-content-featured {}
+.options-content-featured__item {
+}
+.options-content-featured__label {
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 23px;
+	margin-bottom: 12px;
+}
+.options-content-featured__value {
+	font-size: 17px;
+}
+.content-featured__link {
+	background: #F85A47;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 16px 35px;
+	text-align: center;
+	line-height: 150%;
+	display: block;
+	transition: all 0.3s ease 0s;
+	box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+	border-radius: 5px;
+}
+.content-featured__link:hover{
+	background: #cf4a3b;
+}
+
+@media (min-width: 991px) {
+	.content-featured__body {
+		flex: 1 1 auto;
+		padding-top: 40px;
+		max-width: 412px;
+	}
+	.content-featured__link {
+		max-width: 412px;
+	}
+}
+@media (max-width: 479.98px) {
+	.content-featured__options {
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 35px;
+	}
+}
+/* =========================================== */
+
+  /* Настройки для контейнера с рейтингом */
+
+
+  .review-card__rating {
+   
+  } 
+  
+   .stars-rating {
+    display: inline-flex;
+    margin-bottom: 35px;
+  }
+  
+  .star {
+    width: 20px;
+    height: 20px;
+    background-color: #f39c12; /* Цвет для неактивных звезд */
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    ); 
+  }
+  
+   .active { 
+     background-color: #f39c12; 
+  }
+
+/* =================================================== */
+.page__reviews {
+padding-top: 110px;
+padding-bottom: 110px;
+}
+@media(max-width:767.98px){
+  .reviews{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.reviews {
+
+}
+.reviews__container {
+}
+.reviews__title {
+  max-width: 570px;
+  margin-bottom: 50px;
+}
+.title {
+}
+.reviews__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(290px,1fr));
+  color: inherit;
+gap: 20px;
+}
+.reviews__items:hover{
+  border: 1px solid transparent;
+	box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222), 3px 44px 54px rgba(0, 0, 0, 0.08);
+}
+.review-card {
+	padding: 50px 40px;
+	background: #FFFFFF;
+	border: 1px solid #EBEBEB;
+	border-radius: 10px;
+	transition: all 0.3s ease 0s;
+  width: 380px;
+  height: 367px;
+}
+
+
+.review-card__text {
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #333333;
+  max-width: 270px;
+  margin-bottom: 53px;
+
+
+}
+.review-card__author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ 
+}
+.review-card__author-photo {
+  flex: 0 0 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.review-card__author-info {
+
+}
+.review-card__author-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+.review-card__author-location {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+.revirews__footer {
+  display: flex;
+ 
+  padding-top: 106px;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.reviews__partners {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+ 
+}
+.partners__item {
+}
+.footer__reviews__info {
+  flex: 1 1 auto;
+
+ 
+
+}
+.reviews__footer {
+  display: flex;
+  padding-top: 106px;
+  column-gap: 100px;
+}
+@media (max-width: 991.98px){
+	.footer-reviews {
+    flex-wrap: wrap;row-gap: 30px;}
+}
+
+.footer-reviews__partners {
+  flex:  1 1 auto;
+}
+.partners-footer-reviews {
+  display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+.partners-footer-reviews__item {
+}
+.footer-reviews__info {
+}
+  .footer-reviews__info {
+    flex: 0 0 300px;
+    line-height: 1.5;
+  }
+  .footer-reviews__info a{
+    color: #2CBDE7;
+    text-decoration: underline;
+  }
+  .footer-reviews__info a:hover {
+    text-decoration: none;
+  }
+  .page__subscribe {
+  }
+  .subscribe {
+    padding-top: 110px;
+	padding-bottom: 110px;
+  }
+  @media (max-width: 991.98px) {
+    .subscribe {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .subscribe {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  .subscribe__container {
+  }
+  .subscribe__header {
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  .subscribe__title {
+    font-weight: 700;
+	font-size: 45px;
+	line-height: 144.2%;
+	letter-spacing: 0.02em;
+  }
+  .subscribe__sub-title {
+    font-weight: 700;
+	font-size: 23px;
+	line-height: 144.2%;
+  }
+  @media (max-width: 991.98px){
+    .subscribe__title {
+      font-size: 35px;
+    }
+    .subscribe__sub-title {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .subscribe__title {
+      font-size: 24px;
+    }
+  
+    .subscribe__sub-title {
+      font-size: 18px;
+    }
+  }
+  .subscribe__form {
+    max-width: 686px;
+	margin: 0 auto;
+  }
+  .form-subscribe {
+    padding: 25px 45px;
+	background: #FFFFFF;
+	display: flex;
+	gap: 15px;
+	box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04), 0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704), 0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963), 0px 32.6px 13px rgba(0, 0, 0, 0.02), 0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037), 0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963);
+
+  }
+  .form-subscribe__content {
+    flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+  }
+  .form-subscribe__label {
+    display: block;
+	margin-bottom: 10px;
+	color: rgba(49, 53, 59, 0.2);
+  }
+  .form-subscribe__input {
+    font-weight: 700;
+	flex: 1 1 auto;
+	width: 100%;
+	min-height: 40px;
+	font-size: 20px;
+  }
+  .form-subscribe__button {
+    width: 167px;
+	height: 72px;
+	padding: 10px 40px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 18px;
+	background: #F85A47;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+  }
+  .form-subscribe__button:hover{
+    background: #c54638;
+  }
+  
+  @media (max-width: 767.98px) {
+    .form-subscribe {
+      margin: 0px -15px;
+      padding: 15px;
+      flex-direction: column;
+    }
+  }
+ 
+  .footer {
+	
+  }
+  .footer__container {
+    display: grid;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #DEDFE1;
+    grid-template-columns: auto 1fr;
+    row-gap: 70px;
+    column-gap: 20px;
+  }
+  
+  
+  @media (max-width: 767.98px){
+    .footer__container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      grid-template-columns:  1fr;justify-items: center;row-gap: 30px;
+    }
+      
+  }
+  
+  .footer__logo {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 31px;
+    color: inherit;
+  }
+  .footer__menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer__copy {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .footer__copy {grid-column: span 2;}
+  }
+  
+  .menu-footer {}
+  .menu-footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 45px;
+    row-gap: 15px;
+  }
+  .menu-footer__item {}
+  .menu-footer__link {
+    font-weight: 700;
+    color: inherit;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .menu-footer__link:hover{
+    text-decoration: underline;
+  }
+  .social {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 25px;
+    right: 20px;
+    transform: translate(0px,-50%);
+  }
+  .social__item {}
+  
+  @media (max-width: 991.98px){
+    .social {
+      display: none;
+    }
+  }  
+/* margin: внешний отступ блочных тэгов (верх право низ лево)cо строчными тэгами не работает как и падинг
+/* padding:  внутренный отступ блочных тэгов (верхний край правый край низ лево при 4 значений
+если 3 значение то - верх (2 значение лево и право)  низ)
+2 значение  x y, лево право
+1 значение-4 стороны
+всегда позитивные числа*
+padding 25px  + margin -25px - даст расстояние какре на макете и не обрежет тень (слайдер)
+/* Основные стили для всех устройств 
+-------------------------------------------------------------------------------------------------------------
+                                    сетка
+
+/* ПК (более 1200px) 
+@media (min-width: 1201px) {
+  .item {
+      flex: 1 1 25%; /* 4 колонки 
+  }
+}
+
+/* Ноутбук (от 992px до 1200px) 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .item {
+      flex: 1 1 33.33%; /* 3 колонки 
+  }
+}
+
+/* Планшет (от 768px до 991px) 
+@media (min-width: 768px) and (max-width: 991px) {
+  .item {
+      flex: 1 1 50%; /* 2 колонки 
+  }
+}
+
+/* Телефон (от 576px до 767px) 
+@media (min-width: 576px) and (max-width: 767px) {
+  .item {
+      flex: 1 1 100%; /* 1 колонка 
+  }
+}
+
+/* Телефон с маленьким экраном (до 575px) 
+@media (max-width: 575px) {
+  .item {
+      flex: 1 1 100%; /* 1 колонка 
+  }
+}
+=============================================================================================================
+SVG — для векторных изображений, которые должны оставаться четкими при любом размере.
+PNG — для изображений с прозрачностью или когда важно высокое качество без потерь.
+JPG — для фотографий и изображений с плавными цветовыми переходами, когда важен небольшой размер файла.
+
+--------------------------------------------------------------------------------------------------------
+                                             start
+.wrapper{
+display: flex;
+flex-direction: column;
+overflow: hidden;
+min-height: 100%;
+}
+body{
+font-family: Rubik;
+color: #616161;
+font-size: 12px;
+}
+[class*="__container"]{
+max-width: 1057px;
+margin: 0px auto;
+}
+main{
+flex: 1 1 auto;
+}
+ 
+      
+------------------------------------------------------------------------
+ /* text-decoration: line-through перечеркивает текст*/
+  /*overflow:hidden;
+    width:100px;
+      height:100px;
+      border-radius:50%; )(круг)
+      outline - линия вокруг блока
+      box-shadow:5px 5px 10px 15px #000; (x y  radius расстояние тени
+/*.shadow{
+    text-shadow: 1px 1px 1px #000 ;/*x y размер размытия тени цвет
+} */
+
+    /*text-transform: capitalize;  /*Каждое слово с большой буквы*/
+   /* text-transform: lowercase;  /*все с маленькой*/
+   /* text-transform: uppercase;  /*капс*/
+   /* text-transform:  none;  /*без изменений
+   white-space: nowrap; - не переносит на другую строку
+
+ /* text-ident;  /*делает абзац*/
+
+ /* word-spacing;  /*пробел между словами*/
+/*   white-space: nowrap;  /* текст в 1 строку* 
+------------------------------------------
+visibility - отоброзить или скрыть блок
+------------------------------------------
+https://www.colorzilla.com/gradient-editor/ - создание градиента
+---------------------------------------------
+ background: url(../img/youtube.svg) repeat-x - повторение по иксам
+  background: url(../img/youtube.svg) repeat-y - повторение по y
+   background: url(../img/youtube.svg) space - повторение до тех пора пока не заполнить весь контент и делает не большие отступи между картинками
+    background: url(../img/youtube.svg) round- тоже самое но делает так что бы не обрезались картинки
+   0 0 no-repeat;(x y)
+    background: url(../img/youtube.svg) center no-repeat fixed;- по центру не повторяется и остается на месте при скроле ничего не изменится фиксирует изоброжение
+   background-size;- масштабирует фоновое изоброжение  согласно размерам какие ты задал 
+     background: url(../img/robocop.png) 0 0/100% auto no-repeat; (первое ширина - 100% второе высота(auto)
+     background: url(../img/robocop.png) 0 0 /300px 100px  no-repeat; - растянуть картинку
+       background: url(../img/robocop.png) 50% /cover  no-repeat; - адаптиривоная фото подстраивается под разрешение экрана
+         <ul class="list">
+       <li>YockerX</li>
+       <li>KrakenON</li>
+       <li>HHAAHAHA</li>
+       <li>EvilMaster</li>
+       <li>_ASGER_</li>
+     </ul>
+     .list{
+  margin-bottom: 50px;
+}
+.list li{
+font-size: 24px;
+margin-bottom: 15px;
+list-style: none;
+background:url(../img/youtube.svg) left no-repeat;
+padding-left: 30px;
+}
+--cписок с контентом и слева от него фото как нумерация
+================================================================================================================
+                                         псевдоклассы
+   :active - cрабатывает при нажатии
+   :visited- после перехода на ссылку или куда-либо сохраняет данные 
+   :first-child - обращение только к 1 элементу
+   :last-child - обращение к последнему єлементу
+   :nth-child()- обращение к конкретным элементам в блоке (СКОБОЧКИ ОБЯЗАТЕЛЬНО)  там указываешь номер элемента
+    по порядку какой тебе нужен
+    :nth-child(odd) - ко всем не парным числам
+      :nth-child(even) - ко всем  парным числам
+=======================================================================================================================
+                                                   position
+position: relative; -положение єлемента устанавливается относителньо его изначального положение в коде
+left top right bottom - управляють позициями єлемента
+z-index - управляет наложением элементов у кого больше коэф тот главнее и накрывает тот у кого меньше
+работает с position:relative;
+position:absolute - Назар(вообще поебать что и кто делает и на єтот html код где хочет там и будет)
+обязательно должно быть(2 значение) top,left,right,top 
+position:fixed - при скроле сайта едет с нами
+position:sticky - приклеиваеться при скроле
+ ========================================================================================
+                     БЭМ
+блок - независимый компонент страницы.container {
+}
+=============================================================================================================
+                                        flexbox
+inline-flex - cтрочный флекс контейнер
+justify-content - определяет выравнение вдоль основной оси
+flex-wrap: wrap; - адаптируються єлементыт  1 2 3
+flex-wrap: wrap-reverse; - при адаптации меняет их местами 3 2 1
+ align-self: - тоже самое что align items но применяется к элементам какие в флекс контейнере
+ order: number - порядок вывода
+ flex-basis: ;- базовый размер элемента
+ flex-grow: ; - дает возможность увеличиваться єлемента относительно его базового размера
+ flex-shrink - уменьшает 
+ flex: 0 1 auto; - 3 в 1 
+ flex-directuion: row ; - ряд
+  max-width:100% + flex 0 0 (размер какой нужен) - фиксируваная картинка
+  =====================================================================================================================
+                                                        сетка
+@media(max-width:1200px{
+  .container{
+    max-width:970px;
+}
+@media(max-width:992px{
+  .container{
+    max-width:750px;
+}
+@media(max-width:767px{
+  .container{
+    max-width:none;
+}
+=========================================================================================================================
+                                      CSS transform. 2D и 3D трансформации translate, scale, rotate и другие
+translate- перемщает элементы по оси x y( со значением - по x лево по y верх)
+scale - zoom
+rotate-поворачивает элементы  на заданое количество градусов (- значение поворачивает против часвовой стрелки элемент)
+skew - искажает стороны обьекта соотношение  его оси (x угол +deg, y угол +deg)
+martix - mix этого всего обьедениет все в себе
+так же можно их все использовать вместе без матрикса указывать что именно нам надо
+transform-origin: - позволяет сместить центр трансформации
+transform-style - задает стиль трансформации
+=====================================================================================================================
+                                             grid
+display:grid; -блочный
+display:inline-grid; -cтрочный равент контенту
+display: grid часто используется для макетов страниц, когда требуется создать сложные макеты, состоящие из нескольких строк и столбцов.
+display: inline-grid может быть полезен в ситуациях, когда нужно создать небольшую сетку внутри текста или другого строчного контекста, но при этом сохранить элементы сетки внутри строки.
+Grid Container: Элемент с display: grid или display: inline-grid.
+Свойства контейнера: grid-template-columns, grid-template-rows, grid-gap, justify-items, align-items, justify-content, align-content, и т.д.
+Grid Item: Дочерние элементы контейнера.
+Свойства элементов: grid-column, grid-row, grid-area, justify-self, align-self, и т.д.
+Заключение
+display: grid и display: inline-grid имеют свои уникальные применения и могут быть использованы для создания различных макетов, в зависимости от требований к блочным или строчным элементам.
+float и сlear,vertical-aline,first-line,first-letter - не будут с ними работать
+  grid-template-columns: px px px; - для укправение колонками,  сколько нужно колонок  размеры
+  grid-template-columns: 25% 50% 25%;
+      grid-template-columns: 1fr 2fr 1fr; - тоже самое
+       grid-template-columns: 200px minmax(150px,1fr)200px; - оператор минмакс первое значение мин 2 макс
+       1fr не может быть минималньым значением
+        grid-template-columns: fit-content(px)- ограничивает
+        grid-template-columns: repeat(columns,size);
+            grid-template-columns: repeat(3,1fr);
+             grid-template-columns: 1fr 1fr 1fr; - тоже самое
+grid-auto-flow: row; - размещает элементы грид по очереди 
+
+
+  grid-template-rows: px px px; - для управление рядами  сколько нужно  рядов размеры
+
+ для обоих можно процентами
+ fr- размер какой можно использовать исключителньо для grid. Распределяет одинаково что бы заполнить весь контент
+   grid-row-start: ; -  расположить элементы рядов
+     grid-row-columns: ; - расположить элементы колонкам 
+       justify-items: ; - горизинтально
+   align-items: ; - вертикально
+   gap - делает сетку для колонок и рядов
+=======================================================================================================================
+                                        video audio
+Указывает путь к воспроизводимому видеоролику.
+
+width
+Задает ширину области для воспроизведения видеоролика.
+
+height 
+Задает высоту области для воспроизведения видеоролика.
+
+muted
+Выключает аудиодорожку
+
+autoplay
+Видео начинает воспроизводиться автоматически после загрузки страницы.*
+
+controls
+Добавляет панель управления к видеоролику.
+
+loop
+Повторяет воспроизведение видео с начала после его завершения.
+
+poster
+Указывает адрес картинки, которая будет отображаться, 
+пока видео не доступно или не воспроизводится.
+
+preload
+Используется для загрузки видео вместе с загрузкой веб-страницы.
+
+Этот атрибут предназначен для того, 
+чтобы дать контролировать загрузку медиафайла. 
+Он может иметь одно из следующих значений:
+- none: указывает, что видео не должно быть предварительно загружено.
+- metadata: указывает, что предварительно загружаются метаданные видео 
+	(например, длина).
+- auto: указывает, что весь видеофайл может быть загружен, 
+	даже если пользователь не должен его использовать.
+- пустая строка: синоним значения auto.
+
+Если не задано, значение атрибута определяется браузером 
+по умолчанию (то есть, каждый браузер имеет по умолчанию 
+значение данного атрибута). 
+Спецификация рекомендует использовать metadata.
+ =====================================================================================================================================
+                                          единицы измерения
+em - лучше использовать для media
+rem - dla fz
+% - lh
+=====================================================================================================================\
+                                            cелектори
+*-звертання до всіх
+div{
+
+}-до любої группи селекторі наприклад(div , p, a , i td) -звернення до всіх цієї группи
+# -id cелектор  він буде звертатися тільки до вказаного з цим id
+[href]- атрибут з назвою яка в квадратих скобках буде відносится до всіх які мають цю назву
+[class$="назва"] - звертання до всіх що закіняужться на цю назву
+[class*="назва"] - звертання до всіх що містять цю назву
+div class{} - відноситься тільки для дів з классом.Наприклад якщо в контейнері є p і ми не хочемо щоб вони мінялися то використовуємо цей атрибут
+пріоритет більше у того хто нище якщо однакові селектори
+div{}
+*{}  -пріоритет більше у дів
+
+.class
+[artibut] -пріоритет більше у того хто нище
+
+.class
+[artibut] більше пріоритетні ніж 2 нище
+div{}
+*{} 
+
+#element{}-пріоритет найбільший
+.class
+[artibut] 
+div{}
+*{} 
+
+чим більше конкретики тим більше пріоритет
+div div{}
+div>div{} хто нище в того більше пріоритет
+
+#element- майже найбільший пріоритет але якщо в html написати style = і стилі то буде в нього бвльше пріоритет
+!important - має найбільший пріоритет солит игру всіх перебиває але його використовувати не баажно
+=======================================================================================================================
+                                      функции flex grid без них
+column-width-базова ширина колонок насколько возможно заполнить родительский контейнер самостійний адаптив
+  column-count: ;-кількість стовбців
+  якщо їх комбінувати то пріоритет більше більше у каунт
+  columns: column width; - 2 в 1 можно указати
+  column-gap: ; задає відступ
+  сolumn-rule - визначаэ стиль границь між колонками  
+ column-fill: ; - заповнює стовпці балансовано чи ні
+  column-fill: auto ; - йде до кінця сторінки і перенесеться контент на іншу колонку поки не зааповне попередній
+  break-inside - визначає чи буде контент переходити на іншу колонку 
+   break-inside: avoid; - забороняє це робити
+   ==================================================================================================================
+                                               семантика
+Семантика - це наука про значення слів та їхній вплив на сприйняття мовлення іншими людьми. Вона вивчає способи, за допомогою яких люди розуміють і використовують мову. 
+головна мета семантичної верстки полягає у створенні зрозумілого та доступного веб-сайту.
+blockquote- щоб виводити довгі цитати
+q- теж саме але короткі
+details , summary - cпойлери
+=============================================================================================================
+ inset: 0; - для всех сторон (top,bottom,left,right)
+ linear:
+
+Это функция временной функции (timing function) анимации. Значение linear означает, что изменение будет происходить с постоянной скоростью в течение всего времени анимации. Нет ускорения или замедления в начале или в конце анимации.
+background: transparent;- прозрачный
+outline: none;- удаление обводки вокруг элемента
+===========================================================================================================
+                                                      система рейтинга
+<div class="review-card__rating">
+  <div class="stars-rating">
+    <span class="star active"></span>
+    <span class="star active"></span>
+    <span class="star active"></span>
+    <span class="star active"></span>
+    <span class="star active"></span>
+  </div>
+</div>
+CSS
+css
+Копіювати код
+.review-card__rating {
+  /* Настройки для контейнера с рейтингом */
+/* } */
+
+/* .stars-rating {
+  display: inline-flex;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc; /* Цвет для неактивных звезд */
+  /* clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  ); /* Формируем звезду */
+  /* margin-right: 5px; */
+/* } */
+
+/* .star.active { */
+  /* background-color: #f39c12; Цвет для активных звезд */
+/* } */
+/* ==================================================================================================== */
